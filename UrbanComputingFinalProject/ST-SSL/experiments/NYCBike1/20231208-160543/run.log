@@ -1,0 +1,17 @@
+2023-12-08 16:05:43: Experiment log path in: C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543
+2023-12-08 16:05:43: Experiment configs are: Namespace(batch_size=32, best_path='None', d_input=2, d_model=64, d_output=2, data_dir='data', dataset='NYCBike1', debug=False, device='cpu', dropout=0.2, early_stop=True, early_stop_patience=15, epochs=100, grad_norm=True, graph_file='data/NYCBike1/adj_mx.npz', input_length=19, log_dir='C:\\Users\\30697\\Desktop\\UrbanComputingFinalProject\\UrbanComputingFinalProject\\ST-SSL\\experiments\\NYCBike1\\20231208-160543', lr_init=0.001, max_grad_norm=5, mode='train', nmb_prototype=6, num_nodes=128, percent=0.1, seed=31, shm_temp=0.5, temp=4, test_batch_size=32, use_dwa=True, yita=0.6)
+2023-12-08 16:06:59: *******Train Epoch 1: averaged Loss : 12.407241
+2023-12-08 16:07:03: *******Val Epoch 1: averaged Loss : 9.919329
+2023-12-08 16:07:03: **************Current best model saved to C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543\best_model.pth
+2023-12-08 16:08:32: *******Train Epoch 2: averaged Loss : 9.887459
+2023-12-08 16:08:36: *******Val Epoch 2: averaged Loss : 8.939296
+2023-12-08 16:08:36: **************Current best model saved to C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543\best_model.pth
+2023-12-08 16:10:03: *******Train Epoch 3: averaged Loss : 9.101427
+2023-12-08 16:10:07: *******Val Epoch 3: averaged Loss : 8.609143
+2023-12-08 16:10:07: **************Current best model saved to C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543\best_model.pth
+2023-12-08 16:11:58: *******Train Epoch 4: averaged Loss : 8.864515
+2023-12-08 16:12:03: *******Val Epoch 4: averaged Loss : 8.278490
+2023-12-08 16:12:03: **************Current best model saved to C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543\best_model.pth
+2023-12-08 16:13:29: *******Train Epoch 5: averaged Loss : 8.618911
+2023-12-08 16:13:32: *******Val Epoch 5: averaged Loss : 8.172059
+2023-12-08 16:13:32: **************Current best model saved to C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231208-160543\best_model.pth

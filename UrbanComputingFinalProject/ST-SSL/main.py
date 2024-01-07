@@ -72,7 +72,9 @@ def model_supervisor(args):
     except:
         trainer.logger.info(traceback.format_exc())
     return results
-
+### EDW!!!!!
+## ORGH!!!!
+##########################################################################################################
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config_filename', default='configs/NYCBike1.yaml', 
@@ -80,6 +82,7 @@ if __name__=='__main__':
     args = parser.parse_args()
     
     print(f'Starting experiment with configurations in {args.config_filename}...')
+    
     time.sleep(3)
     configs = yaml.load(
         open(args.config_filename), 

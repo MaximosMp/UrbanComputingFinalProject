@@ -121,6 +121,6 @@ def get_dataloader(data_dir, dataset, batch_size, test_batch_size, scalar_type='
     return dataloader
 
 if __name__ == '__main__':
-    loader = get_dataloader('../data/', 'NYCBike1', batch_size=64, test_batch_size=64)
+    loader = get_dataloader('../data/', 'NYCBike2', batch_size=64, test_batch_size=64)
     for key in loader.keys():
         print(key)

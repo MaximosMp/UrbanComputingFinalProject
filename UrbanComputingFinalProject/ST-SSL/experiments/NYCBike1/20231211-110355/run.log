@@ -1,0 +1,36 @@
+2023-12-11 11:03:55: Experiment log path in: C:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\experiments\NYCBike1\20231211-110355
+2023-12-11 11:03:55: Experiment configs are: Namespace(batch_size=32, best_path='None', d_input=2, d_model=64, d_output=2, data_dir='data', dataset='NYCBike1', debug=False, device='cpu', dropout=0.2, early_stop=True, early_stop_patience=15, epochs=100, grad_norm=True, graph_file='data/NYCBike1/adj_mx.npz', input_length=19, log_dir='C:\\Users\\30697\\Desktop\\UrbanComputingFinalProject\\UrbanComputingFinalProject\\ST-SSL\\experiments\\NYCBike1\\20231211-110355', lr_init=0.001, max_grad_norm=5, mode='train', nmb_prototype=6, num_nodes=128, percent=0.1, seed=31, shm_temp=0.5, temp=4, test_batch_size=32, use_dwa=True, yita=0.6)
+2023-12-11 11:03:56: Traceback (most recent call last):
+  File "c:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\model\aug.py", line 223, in aug_topology
+    1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:/Users/30697/Desktop/UrbanComputingFinalProject/UrbanComputingFinalProject/ST-SSL/main.py", line 59, in model_supervisor
+    results = trainer.train() # best_eval_loss, best_epoch
+  File "c:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\model\trainer.py", line 109, in train
+    train_epoch_loss, loss_t = self.train_epoch(epoch, loss_weights)
+  File "c:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\model\trainer.py", line 57, in train_epoch
+    repr1, repr2 = self.model(data, self.graph) # nvc
+  File "C:\Users\30697\anaconda3\envs\ST-SLL\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "c:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\model\models.py", line 35, in forward
+    graph2 = aug_topology(s_sim_mx, graph, percent=self.args.percent*2)
+  File "c:\Users\30697\Desktop\UrbanComputingFinalProject\UrbanComputingFinalProject\ST-SSL\model\aug.py", line 225, in aug_topology
+    raise RuntimeError(G, '\n', aug_graph)
+RuntimeError: (tensor([[0., 1., 0.,  ..., 0., 0., 0.],
+        [1., 0., 1.,  ..., 0., 0., 0.],
+        [0., 1., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 1., 0.],
+        [0., 0., 0.,  ..., 1., 0., 1.],
+        [0., 0., 0.,  ..., 0., 1., 0.]], dtype=torch.float64), '\n', tensor([[0., 1., 0.,  ..., 0., 0., 0.],
+        [1., 0., 1.,  ..., 0., 0., 0.],
+        [0., 1., 0.,  ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0.,  ..., 0., 1., 0.],
+        [0., 0., 0.,  ..., 1., 0., 1.],
+        [0., 0., 0.,  ..., 0., 1., 0.]]))
+

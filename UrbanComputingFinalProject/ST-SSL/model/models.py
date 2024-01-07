@@ -33,6 +33,8 @@ class STSSL(nn.Module):
 
         s_sim_mx = self.fetch_spatial_sim()
         graph2 = aug_topology(s_sim_mx, graph, percent=self.args.percent*2)
+
+        
         
         t_sim_mx = self.fetch_temporal_sim()
         view2 = aug_traffic(t_sim_mx, view1, percent=self.args.percent)

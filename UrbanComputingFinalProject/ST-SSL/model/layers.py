@@ -91,7 +91,7 @@ class TemporalHeteroModel(nn.Module):
 
         lbl_rl = torch.ones(batch_size, num_nodes)
         lbl_fk = torch.zeros(batch_size, num_nodes)
-        lbl = torch.cat((lbl_rl, lbl_fk), dim=1)
+        self.lbl = torch.cat((lbl_rl, lbl_fk), dim=1)
         if device == 'cuda':
             self.lbl = lbl.cuda()
         
